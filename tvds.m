@@ -22,13 +22,16 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#reuseIdentifier#> forIndexPath:<#indexPath#>];
 
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+
     [self configureCell:cell forRowAtIndexPath:indexPath];
 
     return cell;
 }
 
-- (void)configureCell:(UITableViewCell *)cell
-    forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    <#statements#>
+    cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
 }
