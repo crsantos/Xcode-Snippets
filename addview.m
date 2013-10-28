@@ -6,4 +6,4 @@
 
 UIView * view = [[UIView alloc] initWithFrame:<#(CGRect)#>];
 [self.view addSubview:view];
-[view release]
+[view release];
