@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>nsoptions</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>typedef NS_OPTIONS(NSUInteger, &lt;#NameOfEnumeration#&gt;) {
+    &lt;#Option1#&gt;   = 0,
+    &lt;#Option2#&gt;   = 1 &lt;&lt; 0,
+    &lt;#Option3#&gt;   = 1 &lt;&lt; 1,
+};</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E83B1400-8ECB-4FFA-8F92-DE7042C0A18F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>NS_OPTIONS</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NS_OPTIONS</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

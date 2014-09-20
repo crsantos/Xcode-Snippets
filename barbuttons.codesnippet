@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>barbuttons</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Barbutton items actions
+
+- (void) rightBarButtonItemPressed:(UIBarButtonItem*) button
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+- (void) leftBarButtonItemPressed:(UIBarButtonItem*) button
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - Setups
+
+-(void) setupBarButtons
+{
+    self.navigationItem.leftBarButtonItem =
+    [[UIBarButtonItem alloc]
+     initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+     target:self
+     action:@selector(leftBarButtonItemPressed:)];
+    
+    self.navigationItem.rightBarButtonItem =
+    [[UIBarButtonItem alloc]
+     initWithBarButtonSystemItem:UIBarButtonSystemItemSave
+     target:self
+     action:@selector(rightBarButtonItemPressed:)];
+}
+
+- (void) setup
+{
+    [self setupBarButtons];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>94BFBA6D-C9D8-4625-839F-FFFCE0F8646B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>BarButtons</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>BarButtons</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

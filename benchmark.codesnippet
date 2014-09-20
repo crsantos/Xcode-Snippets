@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>benchmark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extern uint64_t dispatch_benchmark(size_t count, void (^block)(void));
+    uint64_t t = dispatch_benchmark(1000, ^{
+        @autoreleasepool {
+            &lt;#code_to_benchmark#&gt;
+        }
+    });
+    NSLog(@"&lt;#code_to_benchmark#&gt; Avg. Runtime: %llu ns", t);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3B0CA202-0A5D-4D64-BB15-EBD4243B606C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Dispatch Benchmark Call with header declaration included</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Dispatch Benchmark</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
