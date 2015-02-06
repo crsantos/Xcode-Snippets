@@ -16,4 +16,4 @@ In Xcode, open a workspace and toggle the right sidebar to be visible. On the bo
 
 3 - And symlink the repo to the xcode snippets folder
 
-```ls -s Xcode-Snippets ~/Library/Developer/Xcode/UserData/CodeSnippets```
+```ln -s Xcode-Snippets ~/Library/Developer/Xcode/UserData/CodeSnippets```
