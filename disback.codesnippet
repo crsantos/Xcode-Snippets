@@ -9,12 +9,12 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void)
-{
+	<string>dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
+    
     // Background tasks
     
-    dispatch_async(dispatch_get_main_queue(), ^(void)
-    {
+    dispatch_async(dispatch_get_main_queue(), ^(void) {
+        
         // Main thread tasks
     });
 });</string>
