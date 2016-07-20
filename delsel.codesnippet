@@ -9,7 +9,8 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if (_delegate &amp;&amp; [_delegate respondsToSelector:@selector(&lt;#selector#&gt;)]) {
+	<string>if (self.delegate &amp;&amp; [self.delegate respondsToSelector:@selector(&lt;#selector#&gt;)] &amp;&amp; [self.delegate conformsToProtocol:@protocol(&lt;#protocol#&gt;)]) {
+    
     &lt;#statements#&gt;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
